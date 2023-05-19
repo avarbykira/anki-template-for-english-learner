@@ -1,0 +1,89 @@
+.card {
+    font-family: arial;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    background-color: white;
+}
+
+.card.nightMode {
+    font-family: arial;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    background-color: #303030;
+} /* 注意：nightMode 大小写需要完全对应*/
+
+
+/*定义的样式*/
+.source {
+    font-size: 30px;
+    text-align: center;
+}
+.win .source {
+    font-size: 30px;
+    text-align: left;
+}   /* windows 下将单词和释义移动到左边，避免窗口过大导致可读性变差。*/
+
+
+/*音频按钮设置（用emoji替换丑丑的图标）*/
+.replay-button svg { 
+    display:none; 
+}
+.replay-button:before { 
+content: '🔊'; 
+}
+
+
+/*优化中英文混排的行距*/
+.change-line-height {
+    line-height: 180%;
+}
+
+
+/*词性的样式*/
+.noun {
+    background-color: #1abc9c;
+}
+.verb {
+    background-color: #3498db;
+}
+.adjective {
+    background-color: #9b59b6;
+}
+.adverb {
+    background-color: #f1c40f;
+}
+.other {
+    background-color: #e67e22;
+}
+
+
+/*分割线的样式*/
+.divideLine {
+    font-size: 15px;
+    color: #808080;
+    background-color: lightgray;
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
+}
+.nightMode .divideLine {
+    font-size: 15px;
+    color: darkgray;
+    background-color: #282828;
+    padding: 5px;
+    border-bottom: 1px solid #282828;
+}
+
+
+/*外部链接的样式*/
+.link {
+    font-size: 10px;
+    color: #808080;
+    padding: 5px;
+}
+.nightMode .link {
+    font-size: 10px;
+    color: darkgray;
+    padding: 5px;
+}

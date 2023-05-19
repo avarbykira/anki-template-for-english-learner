@@ -1,0 +1,73 @@
+<!--单词和发音部分-->
+<p>
+    <span class="source">{{word-or-phrase}}</span>
+    <br>
+    <span> {{audio}} </span>
+    <span> {{phonetic-symbol}} </span>
+</p>
+
+
+<!--释义部分-->
+<p class="divideLine">
+    MEANINGS
+</p>
+
+<p> 
+    <!--显示词性：加上不同颜色方框-->
+    <span style="font-size:medium; padding: 2px; border-radius: 4px; color: white;" class="{{#part-of-speech}}{{part-of-speech}}{{/part-of-speech}}">
+        {{part-of-speech}} 
+    </span>
+    <!--显示中文释义，和词性放在同一行，因此最好不要太长-->
+    <span>
+        &nbsp; <!--加个空格-->
+		{{meaning-in-chinese}}
+    </span>
+    
+    <br>
+
+    <!--显示英文释义-->
+    <span class="change-line-height">
+        {{meaning-in-english}}
+    </span>
+</p>
+
+
+<!--例句部分-->
+<p class="divideLine">
+    EXAMPLE
+</p>
+
+<p>
+    <!--例句1-->
+    <span>{{example-1}}</span> <br>
+    <span  class="change-line-height">
+        {{meaning-of-example-1-in-chinese}}
+    </span>
+</p>
+<p>
+    <!--例句2-->
+    <span>{{example-2}}</span> <br>
+    <span  class="change-line-height">
+        {{meaning-of-example-2-in-chinese}}
+    </span>
+</p>
+
+
+<!--补充部分-->
+
+<p class="divideLine">
+    NOTES
+</p>
+<p>
+    <!--备注，可以放点图片啥的-->
+    <span> {{notes}}</span>
+</p>
+
+<p class="divideLine">
+    EXTERNAL LINKS
+</p>
+<p class="link">
+    <!--外部链接-->
+    <span> {{external-links}}</span>
+</p>
+  
