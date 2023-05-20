@@ -1,15 +1,15 @@
 .card {
     font-family: arial;
-    font-size: 20px;
     text-align: left;
+    font-size: 20px;
     color: black;
     background-color: white;
 }
 
 .card.nightMode {
     font-family: arial;
-    font-size: 20px;
     text-align: left;
+    font-size: 20px;
     color: white;
     background-color: #303030;
 } /* 注意：nightMode 大小写需要完全对应*/
@@ -17,13 +17,15 @@
 
 /*定义的样式*/
 .source {
-    font-size: 30px;
     text-align: center;
 }
 .win .source {
-    font-size: 30px;
-    text-align: left;
-}   /* windows 下将单词和释义移动到左边，避免窗口过大导致可读性变差。*/
+    text-align: center;
+} 
+.word {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
 
 
 /*音频按钮设置（用emoji替换丑丑的图标）*/
@@ -35,10 +37,11 @@ content: '🔊';
 }
 
 
-/*优化中英文混排的行距*/
-.change-line-height {
-    line-height: 180%;
-}
+/*优化中英文混排的行距（暂时作废）
+.improve-layout {
+    padding-top: 150%;
+    padding-bottom: 150%;
+}*/
 
 
 /*词性的样式*/
@@ -78,12 +81,12 @@ content: '🔊';
 
 /*外部链接的样式*/
 .link {
-    font-size: 10px;
+    font-size: 15px;
     color: #808080;
     padding: 5px;
 }
 .nightMode .link {
-    font-size: 10px;
+    font-size: 15px;
     color: darkgray;
     padding: 5px;
 }

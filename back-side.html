@@ -1,9 +1,9 @@
 <!--单词和发音部分-->
-<p>
-    <span class="source">{{word-or-phrase}}</span>
+<p class="source">
+    <span class="word">{{word-or-phrase}}</span>
     <br>
-    <span> {{audio}} </span>
     <span> {{phonetic-symbol}} </span>
+    <span> {{audio}} </span>
 </p>
 
 
@@ -13,22 +13,22 @@
 </p>
 
 <p> 
-    <!--显示词性：加上不同颜色方框-->
-    <span style="font-size:medium; padding: 2px; border-radius: 4px; color: white;" class="{{#part-of-speech}}{{part-of-speech}}{{/part-of-speech}}">
-        {{part-of-speech}} 
-    </span>
-    <!--显示中文释义，和词性放在同一行，因此最好不要太长-->
-    <span>
-        &nbsp; <!--加个空格-->
-		{{meaning-in-chinese}}
-    </span>
-    
-    <br>
+    <div style="padding-bottom: 18px;">
+        <!--显示词性：加上不同颜色方框-->
+        <span style="font-size:medium; padding: 2px; border-radius: 4px; color: white;" class="{{#part-of-speech}}{{part-of-speech}}{{/part-of-speech}}">
+            {{part-of-speech}} 
+        </span>
+        <!--显示中文释义，和词性放在同一行，因此最好不要太长-->
+        <span class="improve-layout">
+            &nbsp; <!--加个空格-->
+		    {{meaning-in-chinese}}
+        </span>
+    </div>
 
     <!--显示英文释义-->
-    <span class="change-line-height">
+    <div>
         {{meaning-in-english}}
-    </span>
+    </div>
 </p>
 
 
@@ -39,17 +39,17 @@
 
 <p>
     <!--例句1-->
-    <span>{{example-1}}</span> <br>
-    <span  class="change-line-height">
+    <div> {{example-1}} </div>
+    <div style="padding-top: 18px; padding-bottom: 18px;">
         {{meaning-of-example-1-in-chinese}}
-    </span>
+    </div>
 </p>
 <p>
     <!--例句2-->
-    <span>{{example-2}}</span> <br>
-    <span  class="change-line-height">
+    <div> {{example-2}} </div>
+    <div  style="padding-top: 18px; padding-bottom: 18px;">
         {{meaning-of-example-2-in-chinese}}
-    </span>
+    </div>
 </p>
 
 
