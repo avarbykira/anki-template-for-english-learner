@@ -1,15 +1,26 @@
-# anki-template-for-english-learner
+# Anki Template for English Learners
 
-This versatile template serves as a valuable resource for expanding one's vocabulary in English. Moreover, with suitable modifications, it can facilitate the acquisition of new words in other languages, such as Spanish.
+Enhance your vocabulary retention with our beautifully designed Anki template, tailored for English learners.
 
-## What is this for?
+## Overview
 
-This repo contains three files. They define how a card illustrates on the screen. 
+This repository houses a trio of files dedicated to shaping the visual presentation of a card when displayed on the screen. Drawing inspiration from the aesthetics of a popular Chinese app, [墨墨背单词](https://www.maimemo.com/), we've streamlined the design, cutting out redundant features we believe most users won't require.
 
-The design of this UI referrs to one Chinese app called MOMO BEI DAN CI. Some abundant part has been cut since I do not think I would use them. 
+The versatility of this template means that with a bit of tweaking, it can be customized for your UI preferences or even adapted for other languages.
 
-You can modify the template as you wish, whether to change its UI or to suitable for other languages. 
+## Installation Guide
 
-## How to use the template? I don't understand the code.
+For those unfamiliar with Anki's card template structure, it comprises three segments:
 
-Open anki. Copy and paste it to your anki... (I'll finish this later.)
+- Front side
+- Back side
+- CSS (Styling)
+
+To integrate this template into your Anki:
+
+- Navigate to each file within this repository.
+- Copy the content.
+- Paste it into the corresponding section on Anki's card template editor.
+- Voilà! Your card is now transformed.
+
+Feel free to adjust the code as you see fit, ensuring it resonates with your learning style and objectives.
